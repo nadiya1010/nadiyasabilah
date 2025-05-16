@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebGIS Kota Bandung</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easybutton.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol/dist/L.Control.Locate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://balladaniel.github.io/leaflet-dataclassification/leafletdataclassification.css"
+    />
+  </head>
+
+  <body>
+    <header id="navbar">
+      <div class="container">
+        <div class="logo">
+          <img src="asset/Logo.png" alt="Logo" width="100" />
+          <h1>WebGIS Kota Bandung</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#hero-section">Home</a></li>
+            <li><a href="#map-section">Map</a></li>
+            <li><a href="#data-section">Data</a></li>
+            <li><a href="#author-section">Author</a></li>
+            <li><a href="#footer">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <div id="hero-section" class="hero-section">
+      <div class="hero-content">
+        <h1>WebGIS Basis Data Spasial Kota Bandung</h1>
+        <p>
+          Halaman untuk Melakukan Eksplorasi Basis Data Spasial di Kota Bandung
+        </p>
+      </div>
+    </div>
+
+    <div id="map-section" class="map-section">
+      <div class="map-overlay">
+        <h2>Jelajahi WebGIS Basis Data Spasial Kota Bandung</h2>
+      </div>
+      <div id="map" style="height: 600px"></div>
+    </div>
+    </div>
+
+    <!-- Data Section -->
+    <div id="data-section">
+      <h2>Data Tersedia</h2>
+      <div class="container">
+        <div class="column">
+          <div class="data-item">
+            <img src="asset/Kota Bandung.jpg" alt="Kota Bandung" />
+            <div class="description">
+              <h3>Kota Bandung</h3>
+              <p>
+                Bandung adalah ibu kota Provinsi Jawa Barat yang dikenal dengan
+                julukan "Kota Kembang". Terletak di dataran tinggi dan
+                dikelilingi oleh pegunungan, kota ini memiliki udara yang sejuk
+                serta pemandangan alam yang indah. Selain menjadi pusat
+                pendidikan dan teknologi, Bandung juga dikenal sebagai kota
+                kreatif dengan kekayaan budaya, kuliner, dan mode yang menarik.
+                Secara historis, Bandung memiliki peran penting sejak masa
+                kolonial Belanda, di mana kota ini dirancang sebagai kota modern
+                dan sempat dijuluki "Parijs van Java" karena keindahan tata
+                kotanya. Bandung juga menjadi saksi sejarah penting Konferensi
+                Asia Afrika tahun 1955, yang memperkuat posisinya sebagai kota
+                bersejarah dan berpengaruh di tingkat nasional maupun
+                internasional.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="data-item">
+            <img src="fasilitas.jpg" alt="fasilitas" />
+            <div class="description">
+              <h3>Sarana dan Prasarana</h3>
+              <p>
+                Bandung adalah ibu kota Provinsi Jawa Barat yang dikenal dengan
+                julukan "Kota Kembang". Terletak di dataran tinggi dan
+                dikelilingi oleh pegunungan, kota ini memiliki udara yang sejuk
+                serta pemandangan alam yang indah. Selain menjadi pusat
+                pendidikan dan teknologi, Bandung juga dikenal sebagai kota
+                kreatif dengan kekayaan budaya, kuliner, dan mode yang menarik.
+                Secara historis, Bandung memiliki peran penting sejak masa
+                kolonial Belanda, di mana kota ini dirancang sebagai kota modern
+                dan sempat dijuluki "Parijs van Java" karena keindahan tata
+                kotanya. Bandung juga menjadi saksi sejarah penting Konferensi
+                Asia Afrika tahun 1955, yang memperkuat posisinya sebagai kota
+                bersejarah dan berpengaruh di tingkat nasional maupun
+                internasional
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="data-item">
+            <img src="pariwisata.jpg" alt="pariwisata" />
+            <div class="description">
+              <h3>Pariwisata</h3>
+              <p>
+                Bandung, dikenal sebagai "Paris van Java", merupakan destinasi
+                wisata unggulan di Indonesia yang menawarkan keindahan alam,
+                kekayaan budaya, dan suasana kota yang sejuk. Dikelilingi
+                pegunungan, Bandung memiliki tempat wisata alam populer seperti
+                Kawah Putih, Tangkuban Perahu, serta pemandian air panas di
+                Lembang dan Ciwidey. Selain wisata alam, kota ini juga terkenal
+                dengan pusat belanja seperti factory outlet di Jalan Riau dan
+                Dago, serta wisata kuliner khas Sunda dan kreasi modern yang
+                menarik. Bandung juga memiliki daya tarik budaya dan edukasi
+                melalui museum, galeri seni, dan acara seni yang rutin digelar.
+                Kombinasi antara alam, budaya, belanja, dan kuliner menjadikan
+                Bandung sebagai tujuan wisata yang lengkap dan selalu menarik
+                untuk dikunjungi.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Author Section -->
+    <div id="author-section">
+      <div class="author-content">
+        <h2>Tentang Pembuat</h2>
+        <img
+          src="asset/profil.png"
+          alt="Profile Picture"
+          class="profile-picture"
+        />
+        <div class="author-name">
+          <h3>Nadiya Sabila Hasanah</h3>
+        </div>
+        <p>
+          Seorang profesional di bidang informasi dan geospasial dengan
+          pengalaman lebih dari sepuluh tahun dalam mengelola dan
+          mengimplementasikan proyek-proyek strategis, termasuk pemetaan
+          tematik, analisis spasial, serta pengembangan sistem informasi
+          geospasial untuk mendukung perencanaan wilayah, mitigasi bencana, dan
+          pemantauan lingkungan. Memiliki keahlian dalam pengolahan data spasial
+          menggunakan teknologi seperti GIS, penginderaan jauh, dan platform
+          berbasis cloud. Terbiasa memberikan pelatihan dan konsultasi kepada
+          berbagai instansi pemerintah, akademisi, maupun sektor swasta. Teliti,
+          tekun, dan berkomitmen tinggi terhadap kualitas kerja. Tertarik pada
+          pengembangan pemanfaatan informasi geospasial yang berdampak langsung
+          terhadap pengambilan keputusan dan pembangunan berkelanjutan.
+        </p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer">
+      <div class="footer-content">
+        <h3>Informasi Kontak</h3>
+        <p>Email: nadiyash10@upi.edu</p>
+        <p>Phone: +62895365264664</p>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol/dist/L.Control.Locate.min.js"></script>
+    <script src="https://balladaniel.github.io/leaflet-dataclassification/leafletdataclassification.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
